@@ -1,0 +1,30 @@
+To fix the layout issues, ensure that the `div` elements have an explicit height, or use a clearfix technique on the parent container:
+
+**Method 1: Explicit Height**
+
+```css
+div {
+  width: 50%;
+  float: left;
+  height: 100px; /* Or any specific height */
+}
+```
+
+**Method 2: Clearfix**
+
+Add a clearfix to the parent container:
+
+```css
+.clearfix::after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+/* Apply the clearfix class to the parent container */
+div.parent {
+  width: 100%;
+  .clearfix
+}
+```
+The clearfix method ensures that the parent container properly contains the floating elements.
