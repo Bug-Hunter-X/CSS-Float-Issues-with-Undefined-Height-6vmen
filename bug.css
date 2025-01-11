@@ -1,0 +1,10 @@
+The following CSS rule causes unexpected behavior in some browsers:
+
+```css
+div {
+  width: 50%;
+  float: left;
+}
+```
+
+The issue arises when the `div` elements do not have a defined height, or the parent container is not explicitly set.  In this case, the `float: left;` property may not render correctly and result in unexpected layout issues, such as elements not displaying properly or overlapping.
